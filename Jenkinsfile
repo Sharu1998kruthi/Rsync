@@ -12,7 +12,7 @@ pipeline {
         stage('transfer ZIP from serve 1 to server 2 using rsync') {
             steps {
                 script {
-                    sh '''rsync -avz -e "ssh -i /home/ubuntu/.ssh/id_rsa.pub" ubuntu@$SRC_SERVER:$DEST_PATH'''
+                    sh '''rsync -avz -e "ssh -i $SSH_KEY" $SRC_SERVER $DEST_SERVER:$DEST_PATH'''
                 }
             }
         }
