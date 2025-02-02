@@ -5,7 +5,7 @@ pipeline {
         stage('transfer ZIP from local to remote server') {
             steps {
                 script {
-                   sh 'scp -0 StrictHostKeyChecking=no C/Users/THIS PC/Deskto/SS Training/Vagrantfile.rar ubuntu@52.1.224.87:/home/ubuntu/scp'
+                   sh 'scp -i C/Users/THIS PC/Deskto/SS Training/Vagrantfile.rar ubuntu@52.1.224.87:/home/ubuntu/scp'
                 }
             }
         }
