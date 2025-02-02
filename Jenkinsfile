@@ -5,7 +5,7 @@ pipeline {
         stage('transfer ZIP from serve 1 to server 2 using rsync') {
             steps {
                 script {
-                    sh "scp -i /c/Users/THIS PC/.ssh -o StrictHostKeyChecking=no ‪C:/Users/THIS PC/Desktop/SS Training/Vagrantfile.rar Ubuntu@3.91.222.233:/home/ubuntu/scp"
+                    sh "scp -i C:\Users\THIS PC\.ssh -o StrictHostKeyChecking=no ‪C:/Users/THIS PC/Desktop/SS Training/Vagrantfile.rar Ubuntu@3.91.222.233:/home/ubuntu/scp"
                 }
             }
         }
