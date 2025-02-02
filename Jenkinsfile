@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-            SSH_PRIVATE_KEY_PATH = ''/c/Users/THIS\ PC/.ssh/id_rsa'
+            SSH_PRIVATE_KEY_PATH = ''/c/Users/THIS PC/.ssh/id_rsa'
     }
     stages {
         stage('transfer ZIP from serve 1 to server 2 using rsync') {
